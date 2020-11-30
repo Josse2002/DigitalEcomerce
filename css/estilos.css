@@ -1,0 +1,342 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+}
+/* fondo */
+.principal{
+    background: url(https://images.pexels.com/photos/853151/pexels-photo-853151.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    -webkit-box-shadow: inset 2px 2px 30px 50px rgba(50, 50, 50, 0.84);
+-moz-box-shadow:    inset 2px 2px 30px 50px rgba(50, 50, 50, 0.84);
+box-shadow:         inset 2px 2px 30px 50px rgba(50, 50, 50, 0.84);
+}
+
+@media(max-width:794px){
+    .principal{
+        height: 110vh;
+    }
+}
+
+@media(max-width:512px){
+    .principal{
+        height: 115vh;  
+    }
+}
+
+/* navbar */
+.boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.274);
+}
+
+.links{
+    margin-right: 30px;
+}
+.links a{
+    margin-right: 30px;
+    color: rgb(255, 253, 253); /* cambiar color despues */
+    text-decoration: none;
+}
+.links select{
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    
+}
+
+.links option{
+    background: rgba(255, 255, 255, 0.11);
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+}
+
+.textos{
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textos h1{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.line{
+    background: white;
+    margin: 0 auto;
+    height: 5px;
+    width: 100px;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0% 10%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+.item h2 i{
+    font-size: 70px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 30%;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textos button{
+    margin-top: 50px;
+    font-weight: 700;
+    border: white 4px solid;
+    padding: 10px 50px;
+}
+.containe{
+    background: rgb(76, 180, 76);
+    display: flex;
+    flex-direction: column;
+    
+}
+.verificar{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.circlee{
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    width: 30%;
+    color: white;
+    z-index: 3;
+
+}
+.circlee h4{
+    color: white;
+    border: solid 3px white;
+    background: rgb(76, 180, 76) ;
+    padding: 10px 19px;
+    border-radius: 100%;
+    z-index: 2;
+}
+.verificar .activo h4{
+    color:rgb(76, 180, 76);
+    background: white;
+    transition: 0.5s;
+}
+.linea{
+    background: rgb(93, 231, 93);
+    margin: 0 auto;
+    height: 5px;
+    width: 65%;
+    position: relative;
+    top: -70px;
+    z-index: 1;
+}
+.billing{
+    width: 60%;
+    margin: 3% 20%;
+    margin-top: 40px;
+}
+
+.line-billing{
+    background: rgb(76, 180, 76);
+    margin: 0 auto;
+    height: 5px;
+    width: 100px;
+}
+.gray{
+    color: rgb(207, 207, 207);
+    text-align: center;
+}
+.formua{
+    color: rgb(207, 207, 207); ;
+}
+.formua option{
+    color: black;
+}
+.colorver{
+    color: rgb(76, 180, 76);
+}
+.verify{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 1s all;
+}
+
+.ver input{
+    text-align: center;
+    border: solid 1px rgb(180, 180, 180);;
+    background: rgb(224, 224, 224);
+}
+
+.animacion{
+   animation: page 1s;
+   transition: all 1s;
+}
+.animacion2{
+    animation: page2 1s;
+    transition: all 1s;
+ }
+
+@keyframes page{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;  
+    }
+}
+@keyframes page2{
+    0%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-40px);
+        opacity: 1;  
+    }
+}
+.about{
+    background: rgb(26, 14, 14);
+    display: flex;
+    flex-direction: column;
+}
+.comm{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0% 5%;
+    padding: 10px;
+}
+.comm img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 7px;
+    border: rgb(76, 180, 76) solid 2px;
+}
+ .name{
+    font-size: 17px;
+ }
+ .size{
+     width: 40%;
+     margin: 0% 30%;
+
+ }
+ .circulitos{
+     margin: 0 auto;
+ }
+ .circulitos button{
+     width: 15px;
+     height: 15px ;
+     background: rgba(145, 145, 145, 0.308);
+     border: none;
+     border-radius: 50%;
+     outline: none;
+     cursor: pointer;
+     margin: 0 5px;
+ }
+ button.reactive{
+    background: rgb(248, 248, 248);
+     
+ }
+
+ .slide{
+     animation: slide 1s;
+     transition: all 1s;
+ }
+
+
+@keyframes slide{
+    0%{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;  
+    }
+}
+footer{
+    background: rgb(76, 180, 76);
+    display: flex;
+    flex-direction: column;
+}
+footer h2{
+    color: rgb(255, 255, 255);
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.social h2{
+    margin: 0px 20px;
+    border: rgba(255, 255, 255, 0.274) solid 2px;
+    padding: 10px 12px;
+     border-radius: 50%;
+}
+.social a{
+    margin: 0px 20px;
+    color: white;
+}
+
+.alerta{
+    animation: alert 10s;
+    transition: 10s all;
+    opacity: 0;
+    
+}
+
+@keyframes alert{
+    0%{
+        opacity: 0;
+        display: none;
+    }
+    15%{
+        opacity: 1;
+        display:inline;
+    }
+    90%{
+        opacity: 1;
+        display:inline;
+    }
+    100%{
+        opacity: 0;
+        display:none;
+    }
+}
